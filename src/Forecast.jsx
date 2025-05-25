@@ -79,10 +79,10 @@ function Forecast() {
     if (!cityName) return;
 
     try {
-      const response1 = await Axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${KEY1}&units=Metric`);
+      const response1 = await Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${KEY1}&units=Metric`);
       setOpenWeatherData(response1.data);
 
-      const response2 = await Axios.get(`http://api.weatherapi.com/v1/current.json?key=${KEY2}&q=${cityName}&aqi=yes&includeAstronomy=true`);
+      const response2 = await Axios.get(`https://api.weatherapi.com/v1/current.json?key=${KEY2}&q=${cityName}&aqi=yes&includeAstronomy=true`);
       setWeatherAPIData(response2.data);
       setSelectedDayData(response2.data);
 
