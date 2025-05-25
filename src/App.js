@@ -1,10 +1,11 @@
 
 import './App.css';
+import Forecast from './Forecast';
 
 function App() {
   return (
    <div>
-    Aurocast
+     <Forecast/>
     </div>
   );
 }
